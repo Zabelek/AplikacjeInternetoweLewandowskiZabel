@@ -3,6 +3,7 @@ package Tables;
 import javax.persistence.*;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.Set;
 
 @Entity
@@ -48,7 +49,9 @@ public class Users {
 
     public Users() {
     }
-
+    public void addDelegation(Optional<Delegation> d){
+        this.delegations.add(d);
+    }
     public int getId() {
         return id;
     }
