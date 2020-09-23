@@ -25,23 +25,20 @@ public class SecurityCon extends WebSecurityConfigurerAdapter{
 		.and()
 		.oauth2Login();
 	}
-	/*
+
 	public void ConfigureGlobal(AuthenticationManagerBuilder builder) throws Exception {
 		
 		builder.authenticationProvider(authProvider());
 	}
-	*/
-	/*
+
 	@Bean
 	public PasswordEncoder encoder() {
 	    return new BCryptPasswordEncoder();
 	}
-	*/
-	/*
+
 	@Autowired
 	private UserDetailsService userDetailsService;
-	 */
-	/*
+
 	@Bean
 	public DaoAuthenticationProvider authProvider() {
 	    DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
@@ -49,5 +46,4 @@ public class SecurityCon extends WebSecurityConfigurerAdapter{
 	    authProvider.setPasswordEncoder(encoder());
 	    return authProvider;
 	}
-	*/
 }
